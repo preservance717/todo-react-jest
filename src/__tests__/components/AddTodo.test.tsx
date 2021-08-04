@@ -28,4 +28,10 @@ describe("AddToDo", () => {
     fireEvent.click(sendIconDom);
     expect(mockOnAdd).toHaveBeenCalledTimes(1);
   })
+
+  it('onAlertClose event handler should be called when pressed Enter button in text field', () => {
+    const { getByText } = render(<AddTodo {...props} restrictedWordAlertOpen={true}/>);
+
+    expect(getByText(/This task already exists/i)).toBeInTheDocument();
+  });
 })
