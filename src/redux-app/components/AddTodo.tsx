@@ -27,8 +27,8 @@ export const AddTodo = (props: IAddTodoProps): React.ReactElement => {
   return (
     <StyledAddTodo container direction="column" justifyContent="center" alignItems="center">
       <Grid container direction="row" justifyContent="center" alignItems="center">
-        <TextField id="newTask" className="addTasksField" label="Add new task" variant="outlined" value={task} onChange={handleChange} onKeyPress={handleKeyPress} autoComplete='off' />
-        <IconButton id="sendIcon" color="primary" onClick={handleClick}>
+        <TextField id="newTask" data-testid="rtl-newTask" className="addTasksField" label="Add new task" variant="outlined" value={task} onChange={handleChange} onKeyPress={handleKeyPress} autoComplete='off' />
+        <IconButton id="sendIcon" data-testid="rtl-sendIcon" color="primary" onClick={handleClick}>
           <SendIcon />
         </IconButton>
       </Grid>
