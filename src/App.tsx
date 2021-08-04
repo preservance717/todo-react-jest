@@ -1,6 +1,6 @@
 import React from 'react';
 import { Grid } from '@material-ui/core';
-import { ConnectedAddTodo } from "./containers/ConnectedAddTodo";
+import { ConnectedAddTodo } from "./redux-app/containers/ConnectedAddTodo";
 
 import './App.css';
 
